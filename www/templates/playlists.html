@@ -1,0 +1,32 @@
+<!-- <ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.album}}
+         {{playlist.artist}}
+          {{playlist.album}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view> -->
+
+
+
+<ion-view view-title="Locations" >
+ <ion-content ng-controller="PlaylistsCtrl">
+
+      <div class="list">
+
+        <a ng-repeat="playlist in playlists" 
+           href="#/app/playlists/{{playlist.id}}"
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{ playlist.image }}">
+          <h2>{{ playlist.album }}</h2>
+          <h4>{{ playlist.artist }}</h4>
+        </a>
+
+      </div>
+
+    </ion-content>
+</ion-view>
