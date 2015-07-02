@@ -1,4 +1,4 @@
-
+<!-- 
       <script src=' https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css'>
 </script>
    <script src=' https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'>
@@ -9,7 +9,7 @@
 </script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'>
 </script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/> -->
 
 <ion-view view-title="Discover">
 <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
@@ -17,47 +17,50 @@
 
 	<ion-tabs class="tabs-positive tabs-icon-only">
 
-  <ion-tab title="Home" icon-on="icon ion-home" icon-off="icon ion-home-outline">
+  <ion-tab title="Home" icon-on="icon ion-home" icon-off="icon ion-home" 
+  href="#/app/discover/home">
+  <ion-nav-view name="home-tab" ></ion-nav-view>
     <!-- Tab 1 content -->
   </ion-tab>
 
-  <ion-tab title="About" icon-on="ion-android-walk" icon-off="ion-android-walk-outline">
+  <ion-tab title="Activities" icon-on="ion-android-walk" icon-off="ion-android-walk"
+  href="#/app/discover/activities">
+   <ion-nav-view name="activities-tab" ></ion-nav-view>
     <!-- Tab 2 content -->
   </ion-tab>
 
-  <ion-tab title="Settings" icon-on="ion-pizza" icon-off="ion-pizza-outline">
+  <ion-tab title="Food" icon-on="ion-pizza" icon-off="ion-pizza"
+  href="#/app/discover/food">
+    <!-- Tab 3 content -->
+     <ion-nav-view name="food-tab" ></ion-nav-view>
+  </ion-tab>
+
+   <ion-tab title="Nightlife" icon-on="ion-beer" icon-off="ion-beer"
+   href="#/app/discover/nightlife">
+    <!-- Tab 3 content -->
+     <ion-nav-view name="nightlife-tab" ></ion-nav-view>
+  </ion-tab>
+
+   <ion-tab title="transportation" icon-on="ion-android-car" icon-off="ion-android-car"
+   href="#/app/discover/transportation">
+    <!-- Tab 3 content -->
+     <ion-nav-view name="transportation-tab" ></ion-nav-view>
+  </ion-tab>
+
+   <ion-tab title="Shop" icon-on="ion-ios-cart" icon-off="ion-ios-cart"
+   href="#/app/discover/shop">
+   <ion-nav-view name="shop-tab" ></ion-nav-view>
+  
     <!-- Tab 3 content -->
   </ion-tab>
 
-   <ion-tab title="Settings" icon-on="ion-beer" icon-off="iion-beer-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
 
-   <ion-tab title="Settings" icon-on="ion-android-car" icon-off="ion-android-car-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
-
-   <ion-tab title="Shop" icon-on="ion-ios-cart" icon-off="ion-ios-cart-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
-
-    <ion-tab title="Settings" icon-on="" icon-off="-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
-
-    <ion-tab title="Settings" icon-on="" icon-off="-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
-
-    <ion-tab title="Settings" icon-on="" icon-off="-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
 
 
 
 </ion-tabs>
   </div>
-
+<!--
   <ion-content>
    
     <div id="map"></div>
@@ -72,5 +75,5 @@
         </ion-content>
       </ion-view>
     </script>
-
+-->
 </ion-view>

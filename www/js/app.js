@@ -30,7 +30,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.discover', {
+
+
+
+// "menuContent" lies inside the sidemenu
+// it needs to be abstract because you want to 
+//change the tab content
+
+//###########DISCOVER sidmenu####################
+.state('app.discover', {
     url: "/discover",
     views: {
       'menuContent': {
@@ -38,16 +46,80 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-  .state('app.shop', {
-    id: "shop",
-    url: "/shop",
+  // .state('app.discover', {
+  //   url: "/discover",
+  //   abstract: true,
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: "templates/discover.html"
+  //     }
+  //   }
+  // })
+ //vvvvvvvvvvvvvvvvvvDISCOVER TABSvvvvvvvvvvvvvvvvvvvv
+.state('app.discover.home', {
+    url: "/home",
     views: {
-      'shop': {
-        templateUrl: "templates/shop.html"
+      'home-tab': {
+        templateUrl: "templates/home.html"
+      }
+    }
+  })
+ 
+.state('app.discover.activities', {
+    
+    url: "/activities",
+    views: {
+      'activities-tab': {
+        templateUrl: "templates/activities.html"
       }
     }
   })
 
+.state('app.discover.food', {
+    
+    url: "/food",
+    views: {
+      'food-tab': {
+        templateUrl: "templates/food.html"
+      }
+    }
+  })
+
+.state('app.discover.nightlife', {
+    
+    url: "/nightlife",
+    views: {
+      'nightlife-tab': {
+        templateUrl: "templates/nightlife.html"
+      }
+    }
+  })
+
+.state('app.discover.transportation', {
+    
+    url: "/transportation",
+    views: {
+      'transportation-tab': {
+        templateUrl: "templates/transportation.html"
+      }
+    }
+  })
+
+  .state('app.discover.shop', {
+    
+    url: "/shop",
+    views: {
+      'shop-tab': {
+        templateUrl: "templates/shop.html"
+      }
+    }
+  })
+  //^^^^^^^^^^^^^^^^^DISCOVER TABS^^^^^^^^^^^^^^^^^^
+//###########DISCOVER sidmenu####################
+
+
+
+//###########MAP sidmenu####################
   .state('app.map', {
     url: "/map",
     views: {
@@ -56,6 +128,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+
+  
+  //###########MAP sidmenu####################
     .state('app.playlists', {
       url: "/playlists",
       views: {
