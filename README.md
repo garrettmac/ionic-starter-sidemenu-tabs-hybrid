@@ -33,9 +33,9 @@ $ ionic start myApp map
 $ ionic start myApp http://codepen.io/[pen url here]
 ```
 
-##### or in somecases just another URL
+##### or in some cases just another URL
 ```bash
-$ ionic start myApp tabs
+$ ionic start myApp [URL here]
 ```
 
 #### How to run and test on devices and emulators
