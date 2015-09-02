@@ -93,6 +93,10 @@ $ ionic serve
 
 
 
+
+
+<br>
+
 # How to use this template
 
 
@@ -124,7 +128,7 @@ $ ionic serve
 
 And if you make better adjustments just push in back. 
 
-Enjoy
+Enjoy!
 
 
 
