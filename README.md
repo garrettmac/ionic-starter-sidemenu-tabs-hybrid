@@ -89,7 +89,11 @@ $ ionic serve
 ```
 
 
-## How to use this template
+
+
+
+
+# How to use this template
 
 
 First `cd` into the directory you want to add this project and run:
@@ -119,6 +123,7 @@ $ ionic serve
 ```
 
 And if you make better adjustments just push in back. 
+
 Enjoy
 
 
