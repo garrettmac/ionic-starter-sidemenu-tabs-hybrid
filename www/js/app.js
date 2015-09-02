@@ -129,7 +129,35 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  
+  //vvvvvvvvvvvvvvvvvvMAP TABSvvvvvvvvvvvvvvvvvvvv
+.state('app.map.map', {
+    
+    url: "/map",
+    views: {
+      'map-tab': {
+        templateUrl: "templates/map.html"
+      }
+    }
+  })
+.state('app.map.hotspots', {
+    
+    url: "/hotspots",
+    views: {
+      'hotspots-tab': {
+        templateUrl: "templates/hotspots.html"
+      }
+    }
+  })
+.state('app.map.favorites', {
+    
+    url: "/favorites",
+    views: {
+      'favorites-tab': {
+        templateUrl: "templates/favorites.html"
+      }
+    }
+  })
+   //^^^^^^^^^^^^^^^^^MAP TABS^^^^^^^^^^^^^^^^^^
   //###########MAP sidmenu####################
     .state('app.playlists', {
       url: "/playlists",
