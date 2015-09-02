@@ -118,6 +118,7 @@ $ bower install
 $ ionic serve
 ```
 
+And if you make better adjustments just push in back. 
 Enjoy
 
 
